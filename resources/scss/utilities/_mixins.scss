@@ -1,0 +1,12 @@
+
+@mixin mq($break) {
+    @media (min-width: $break) {
+        @content;
+    }
+}
+
+@mixin hover($btn-color) {
+    &:hover {
+        background-color: lighten($btn-color, 10%);
+    }
+}
